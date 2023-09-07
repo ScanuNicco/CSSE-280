@@ -1,0 +1,35 @@
+body{
+    font-family: sans-serif;
+}
+
+.dark body {
+    background: black;
+    color: rgb(22, 216, 22);
+}
+
+.light body {
+    background:rgb(22, 216, 22);
+    color: black;
+}
+
+li {
+    list-style: circle;
+}
+
+.square {
+    list-style-type: square;
+}
+
+#themeSwitch {
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 100%;
+    position: fixed;
+    left: calc(50% - 25px);
+}
+
+.light #themeSwitch {
+    color: white;
+    background: black;
+}d
