@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'seven';
+    src: url('./Seven Segment.ttf') format('truetype');
+}
+
+#counterCont {
+    width: 40vh;
+    height: 40vh;
+    background: linear-gradient(rgb(167, 57, 57), #803737);
+    border-radius: 50%;
+    border: solid rgb(32, 32, 54) 5px;
+    margin:  20vh auto 15px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 4px 5px #0004;
+}
+
+#display {
+    background: grey;
+    width: 50%;
+    min-width: min-content;
+    max-width: 80%;
+    margin: 20% auto 10% auto;
+    font-size: 64px;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, .3);
+    font-family: seven;
+}
+
+#buttonCont {
+    display: flex;
+}
+
+#buttonCont button {
+    border: none;
+    font-size: 32pt;
+    width: 30%;
+    padding: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    background: rgba(211, 211, 211, 0.781);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .3);
+    transition-duration: .1s;
+}
+
+#display, #buttonCont {
+    line-height: 1 !important;
+}
+
+#buttonCont button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, .4);
+}
