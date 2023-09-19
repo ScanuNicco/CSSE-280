@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css' integrity='sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==' crossorigin='anonymous'/>
+</head>
+<body>
+     <!-- A grey horizontal navbar that becomes vertical on small screens -->
+<nav class="navbar navbar-dark navbar-expand-sm bg-dark text-white">
+
+    <div class="container-fluid">
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <a class="navbar-brand" href="#">
+            <img src="https://scanuproductions.com/images/ScanuProdRed.png" alt="Avatar Logo" style="width:100px;" class="pill"> 
+          </a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Video Games</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Car Shows</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Linux Hacks</a>
+        </li>
+      </ul>
+    </div>
+  
+  </nav> 
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul> 
+    <div class="card">
+        <div class="card-header">Header</div>
+        <div class="card-body">Content</div>
+        <div class="card-footer">Footer</div>
+    </div>
+    <br>
+    <div class="card bg-success m-5">
+        <img class="card-img-top" src="https://scanuproductions.com/images/coming-soon.png">
+        Server accepted your request!
+    </div>
+    <div class="dropdown m-3">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+          Hmm...
+        </button>
+        <ul class="dropdown-menu">
+            <!-- Interesting note: I had to import bootstrap bundle instead of regular bootstrap to make it work-->
+          <li><a class="dropdown-item" href="#">It looks like a dropdown</a></li>
+          <li><a class="dropdown-item" href="#">but in html it's actually...</a></li>
+          <li><hr class="dropdown-divider"></hr></li> 
+          <li><a class="dropdown-item" href="#">Just a list!</a></li>
+        </ul>
+      </div> 
+
+      <button data-bs-toggle="collapse" data-bs-target="#demo" class="btn btn-danger p-3 m-3" data-bs-toggle="tooltip" title="Hooray!">Hot Take</button>
+
+      <div id="demo" class="collapse m-2"> 
+      PHP gets a lot of hate but as someone who started with JavaScript I think that Python has weirder syntax. Semicolons are nice
+      </div> 
+
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Open modal
+      </button>
+
+      <!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          That's a lot of HTML for a basic modal 
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+    
+  </div>
+  <div class="container-fluid mt-3">
+    <div class="row m-4">
+        <!-- Not entirely sure why this isn't working -->
+        <div class="col-sm-4 border p-8">Small Column</div>
+        <div class="col-sm-8 border bg-primary p-8">Bigger Column</div>
+    </div>
+</div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js' integrity='sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A==' crossorigin='anonymous'></script>
+</body>
+</html>

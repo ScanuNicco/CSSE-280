@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/counter.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css' crossorigin='anonymous'/>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">Favorites</a>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-lg text-center">
+            <h1>Choose your Favorite Color</h1>
+            <div class="circle" id="circleID"></div>
+            <div class="row" style="max-width: 60vmin; margin: auto">
+                <div class="col">
+                    <p class="text-secondary">Preset Color</p>
+                    <div class="btn-group">
+                        <button class="btn btn-danger" onclick="paint('red')">Red</button>
+                        <button class="btn btn-success" onclick="paint('green')">Green</button>
+                        <button class="btn btn-warning" onclick="paint('yellow')">Yellow</button>
+                    </div>
+                </div>
+                <div class="col" style="min-width: 150px !important;">
+                    <p class="text-secondary">Custom Color</p>
+                    <input class="btn" type="color" oninput="handleCustomColor(event)">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg text-center">
+            <h1>Choose your Favorite Number</h1>
+            <div id="counterCont" class="circle">
+                <div id="display">
+                    0
+                </div>
+                <div id="buttonCont">
+                    <button style="border-bottom-left-radius: 100%; padding: 1vw 2vw 2vw 2vw;" id="inc">&#9650;</button>
+                    <button style="padding: 2vw 1.5vw; font-family: seven;" id="zero">0</button>
+                    <button style="border-bottom-right-radius: 100%; padding: 1vw 2.5vw 2vw 1.5vw;" id="dec">&#9660;</button>
+                </div>
+            </div>
+
+            <div class="card d-none d-lg-block" style="max-width: 500px; margin: auto;">
+                <div class="card-header">
+                    <h2>Key Commands</h2>
+                </div>
+                <div class="card-body text-left">
+                    <ul>
+                        <li><b>Up Arrow:</b> Increment</li>
+                        <li><b>Down Arrow:</b> Decrement</li>
+                        <li><b>Left Arrow:</b> Decimal Shift Left</li>
+                        <li><b>Right Arrow:</b> Decimal Shift Right</li>
+                        <li><b>Zero:</b> Reset Counter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/scripts.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
