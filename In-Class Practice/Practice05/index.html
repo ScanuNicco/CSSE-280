@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <h1>Resizable Responsive Notepad</h1>
+    <span id="timeBox"></span>
+    <script src="scripts/scripts.js"></script>
+
+    <div id="noteCont">
+        <textarea id="notePad">
+
+        </textarea>
+        <div id="bottomCont">
+            <span>Use the Save button to store your notes in LocalStorage</span>
+            <button onclick="clearNotes()">Reset</button>
+            <button onclick="saveNotes()">Save</button>
+        </div>
+    </div>
+</body>
+</html>
