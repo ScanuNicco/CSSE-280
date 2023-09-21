@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#timeBox {
+    font-size: 18pt;
+    color: gray;
+}
+
+#noteCont {
+    overflow: hidden;
+    background: #ccc;
+    min-width: 300px;
+    width: 80vw;
+    margin: 150px auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 2px #0004;
+}
+
+#notePad {
+    height: 50vh;
+    border:none;
+    background: #eee;
+    padding: 50px;
+    resize: vertical;
+    font-family: sans-serif;
+}
+
+#bottomCont {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+#bottomCont span {
+    flex-grow: 1;
+    text-align: left;
+}
+
+#bottomCont button {
+    box-shadow: 0px 0px 4px #0002;
+    font-size: 16pt;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
