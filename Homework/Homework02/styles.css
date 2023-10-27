@@ -1,0 +1,14 @@
+.navbar {
+    background: #33bb66 !important;
+}
+
+.card {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.cardsub {
+    font-weight: 400;
+    color: #888;
+    font-size: 1em;
+}
